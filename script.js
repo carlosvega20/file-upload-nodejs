@@ -34,9 +34,7 @@ doc.ondrop = function (event) {
       console.log('Something went terribly wrong...');
     }
   };
-
-  console.log(typeof formData);
-  console.log(formData);
+  
   xhr.send(formData);
 
 
