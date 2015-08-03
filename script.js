@@ -26,7 +26,7 @@ doc.ondrop = function (event) {
   }
 
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://localhost:3030/upload', true);
+  xhr.open('POST', 'upload', true);
   xhr.onload = function () {
     if (xhr.status === 200) {
       console.log('all done: ' + xhr.status);

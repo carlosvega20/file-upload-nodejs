@@ -22,7 +22,7 @@ http.createServer(function(req, res) {
       // Use read  data to parse the file into binary data.
       fs.readFile(files.userPicture.path, function (err, data) {
         // Write the binary data to file
-        fs.writeFile(files.userPicture.name, data, function (err) {
+        fs.writeFile("uploads/" + files.userPicture.name, data, function (err) {
           if (err) {
             console.log(err);
           } else {
